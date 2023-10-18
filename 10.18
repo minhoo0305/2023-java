@@ -73,3 +73,11 @@ function upgradeUser(user) {
         }
         //long upgrade logic...
     }
+
+//good
+function upgradeUser(user){
+    if(user.point<=10){
+        return;
+    }
+        //long upfrade logic...
+}
