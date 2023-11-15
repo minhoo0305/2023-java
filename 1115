@@ -33,8 +33,8 @@
         // 이벤트를 연결합니다.
         $(document).ready(function () {
             // 스타일 속성을 변경합니다.
-            $('h1').css('color', 'purple');
-            $('h1').css('background', 'pink');
+            $('h1').css('color', 'maroon');
+            $('h1').css('background', 'Burlywood');
         });
     </script>
 </head>
@@ -57,8 +57,8 @@
         // 이벤트를 연결합니다.
         $(document).ready(function () {
             // 스타일 속성을 변경합니다.
-            $('h1').css('color', 'purple');
-            $('h1').css('background', 'pink');
+            $('h1').css('color', 'maroon');
+            $('h1').css('background', 'Burlywood');
         });
     </script>
 </head>
@@ -100,8 +100,8 @@
         // 이벤트를 연결합니다.
         $(document).ready(function () {
             // 스타일 속성을 변경합니다.
-            $('h1').css('color', 'purple');
-            $('h1').css('background', 'pink');
+            $('h1').css('color', 'maroon');
+            $('h1').css('background', 'Burlywood');
         });
     </script>
 </head>
@@ -140,7 +140,7 @@
             $('.box').css('margin', 10);
             $('.box').css('width', 100);
             $('.box').css('height', 100);
-            $('.box').css('backgroundColor', 'skyblue');
+            $('.box').css('backgroundColor', 'Blanchedalmond');
         });
     </script>
 </head>
@@ -150,3 +150,462 @@
     <div class="box"></div>
 </body>
 </html>
+
+-------------------------------------------------------------------------------------
+(마우스 호버 작동)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 스타일 속성을 변경합니다.
+            $('h1').css('color', 'maroon');
+            $('h1').css('background', 'Burlywood');
+        });
+    </script>
+</head>
+<body>
+    <h1>HYWU</h1>
+    <h1>bigdata</h1>
+    <h1>빅데이터과</h1>
+</body>
+<head>
+    <title>Clock</title>
+    <script>
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var clock = document.getElementById('clock');
+
+            // 1초마다 함수를 실행합니다.
+            setInterval(function () {
+                var now = new Date();
+                clock.innerHTML = now.toString();
+
+            }, 1000);
+        };
+    </script>
+</head>
+<body>
+    <h1 id="clock"></h1>
+</body>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일을 적용합니다.
+            $('.box').css('float', 'left');
+            $('.box').css('margin', 15);
+            $('.box').css('width', 100);
+            $('.box').css('height', 100);
+            $('.box').css('border-radius', 90);
+            $('.box').css('backgroundColor', 'Blanchedalmond');
+        });
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+<head>
+    <title>jQuery Basic</title>
+    <style>
+        #box {
+            width: 400px; height: 130px;
+            background-color: rgb(188,143,143);
+        }
+
+        #box.hover {
+            background-color: rgb(210,105,30);
+            border-radius: 90px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#box').hover(function () {
+                // 스타일을 변경합니다.
+                $('#box').addClass('hover');
+            }, function () {
+                // 스타일을 변경합니다.
+                $('#box').removeClass('hover');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------
+(복합 메서드 이벤트 적용)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 스타일 속성을 변경합니다.
+            $('h1').css('color', 'maroon');
+            $('h1').css('background', 'Burlywood');
+        });
+    </script>
+</head>
+<body>
+    <h1>HYWU</h1>
+    <h1>bigdata</h1>
+    <h1>빅데이터과</h1>
+</body>
+<head>
+    <title>Clock</title>
+    <script>
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var clock = document.getElementById('clock');
+
+            // 1초마다 함수를 실행합니다.
+            setInterval(function () {
+                var now = new Date();
+                clock.innerHTML = now.toString();
+
+            }, 1000);
+        };
+    </script>
+</head>
+<body>
+    <h1 id="clock"></h1>
+</body>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일을 적용합니다.
+            $('.box').css('float', 'left');
+            $('.box').css('margin', 15);
+            $('.box').css('width', 100);
+            $('.box').css('height', 100);
+            $('.box').css('border-radius', 90);
+            $('.box').css('backgroundColor', 'Blanchedalmond');
+        });
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+<head>
+    <title>jQuery Basic</title>
+    <style>
+        #box {
+            width: 400px; height: 130px;
+            background-color: rgb(188,143,143);
+        }
+
+        #box.hover {
+            background-color: rgb(210,105,30);
+            border-radius: 90px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#box').hover(function () {
+                // 스타일을 변경합니다.
+                $('#box').addClass('hover');
+            }, function () {
+                // 스타일을 변경합니다.
+                $('#box').removeClass('hover');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<head>
+    <title>Animate Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 이벤트를 연결합니다.
+            $('h1').hover(function () {
+                // 색상을 변경합니다.
+                $(this).css({
+                    background: 'maroon',
+                    color: 'Burlywood'
+                });
+            }, function () {
+                // 색상을 제거합니다.
+                $(this).css({
+                    background: '',
+                    color: ''
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Click</h1>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------
+(글씨 사라졌다가 나타나게 하기 적용)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 스타일 속성을 변경합니다.
+            $('h1').css('color', 'maroon');
+            $('h1').css('background', 'Burlywood');
+        });
+    </script>
+</head>
+<body>
+    <h1>HYWU</h1>
+    <h1>bigdata</h1>
+    <h1>빅데이터과</h1>
+</body>
+<head>
+    <title>Clock</title>
+    <script>
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var clock = document.getElementById('clock');
+
+            // 1초마다 함수를 실행합니다.
+            setInterval(function () {
+                var now = new Date();
+                clock.innerHTML = now.toString();
+
+            }, 1000);
+        };
+    </script>
+</head>
+<body>
+    <h1 id="clock"></h1>
+</body>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일을 적용합니다.
+            $('.box').css('float', 'left');
+            $('.box').css('margin', 15);
+            $('.box').css('width', 100);
+            $('.box').css('height', 100);
+            $('.box').css('border-radius', 90);
+            $('.box').css('backgroundColor', 'Blanchedalmond');
+        });
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+<head>
+    <title>jQuery Basic</title>
+    <style>
+        #box {
+            width: 400px; height: 130px;
+            background-color: rgb(188,143,143);
+        }
+
+        #box.hover {
+            background-color: rgb(210,105,30);
+            border-radius: 90px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#box').hover(function () {
+                // 스타일을 변경합니다.
+                $('#box').addClass('hover');
+            }, function () {
+                // 스타일을 변경합니다.
+                $('#box').removeClass('hover');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<head>
+    <title>Animate Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 이벤트를 연결합니다.
+            $('h1').hover(function () {
+                // 색상을 변경합니다.
+                $(this).css({
+                    background: 'maroon',
+                    color: 'Burlywood'
+                });
+            }, function () {
+                // 색상을 제거합니다.
+                $(this).css({
+                    background: '',
+                    color: ''
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Click</h1>
+</body>
+<head>
+    <title>Event Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 이벤트를 연결합니다.
+            $('button').click(function () {
+                // 간단한 효과를 적용합니다.
+                $('.page').fadeToggle('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Toggle Show</button>
+    <div class="page">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </div>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------
+(애니메이션 적용)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animate Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일을 변경합니다.
+            $('#box').css({
+                width: 100,
+                height: 100,
+                background: 'red'
+            }).animate({
+                width: 300,
+                opacity: 0.5,
+            }, 500);
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------
+(애니메이션 정지 적용)
+
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Animate Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일을 변경합니다.
+            $('#box').css({
+                width: 100,
+                height: 100,
+                background: 'red'
+            }).animate({
+                width: 300,
+                opacity: 0.5,
+            }, 500);
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<head>
+    <title>Animation Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 변수를 선언합니다.
+            var clearQueue = false;
+            var goToEnd = false;
+
+            // 이벤트를 연결합니다.
+            $('#clearQueue').change(function () {
+                clearQueue = $(this).prop('checked')
+            });
+
+            $('#goToEnd').change(function () {
+                goToEnd = $(this).prop('checked');
+            });
+
+            $('#stopButton').click(function () {
+                $('#box').stop(clearQueue, goToEnd);
+            });
+
+            // 스타일을 변경합니다.
+            $('#box').css({
+                width: 100,
+                height: 100,
+                background: 'red'
+            })
+
+            // 타이머를 연결합니다.
+            setInterval(function () {
+                $('#box').animate({
+                    width: 200
+                }, 1000).delay(1000).animate({
+                    width: 100,
+                    height: 100
+                }, 1000);
+            }, 3000);
+        });
+    </script>
+</head>
+<body>
+    <!-- 입력 양식 -->
+    <label>clearQueue</label>
+    <input id="clearQueue" type="checkbox">
+    <br>
+    <label>goToEnd</label>
+    <input id="goToEnd" type="checkbox">
+    <br>
+    <button id="stopButton">Stop</button>
+    <!-- 애니메이션 -->
+    <div id="box"></div>
+</body>
+</html>
+
